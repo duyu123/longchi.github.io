@@ -12,11 +12,41 @@ module.exports = {
     repoLabel: 'My GitHub',
   	nav: [
   		{ text: 'Home', link: '/' },
-  		{ text: 'page-a', link: '/blog/page-a.md' }
+      { text: '博客', 
+        items: [
+          {
+            text: 'JavaScript',
+            link: '/blog/javascript/'
+          },
+          {
+            text: 'TypeScript',
+            link: '/blog/typescript/'
+          }
+        ]
+      }
   	],
-  	sidebar: [
-      ['/', '首页'],
-      ['/blog/page-a.md', '我的第一篇博客']
-    ]
+  	sidebar: {
+      '/blog/javascript/': [
+        {
+          title: 'JavaScript',
+          collapsable: false,
+          children: [
+            ['javascript1.md', '作用域']
+          ]
+        }
+      ],
+      '/blog/typescript/': [
+        {
+          title: 'TypeScript',
+          collapsable: false,
+          children: [
+            ['typescript1.md', '基本类型']
+          ]
+        }
+      ],
+      sidebarDepth: 2,
+      // ['/', '首页'],
+      // ['/blog/page-a.md', '我的第一篇博客']
+    }
   }
 }

@@ -2,7 +2,7 @@
 home: true
 
 actionText: Get Started →
-actionLink: /guide/
+actionLink: /blog/
 features:
 - title: Simplicity First
   details: Minimal setup with markdown-centered project structure helps you focus on writing.
