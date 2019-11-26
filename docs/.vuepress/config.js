@@ -11,7 +11,7 @@ module.exports = {
     // 自定义仓库链接文字。
     repoLabel: 'My GitHub',
   	nav: [
-  		{ text: 'Home', link: '/' },
+  		{ text: 'Home', link: '/blog/javascript/' },
       { text: '博客', 
         items: [
           {
@@ -31,7 +31,14 @@ module.exports = {
           title: 'JavaScript',
           collapsable: false,
           children: [
-            ['javascript1.md', '作用域']
+            ['javascript1.md', 'D3圆饼图'],
+          ]
+        },
+        {
+          title: 'Vue',
+          collapsable: false,
+          children: [
+            ['vue-nextTick.md', 'nextTick事件原理'],
           ]
         }
       ],
