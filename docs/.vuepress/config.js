@@ -21,6 +21,10 @@ module.exports = {
           {
             text: 'TypeScript',
             link: '/blog/typescript/'
+          },
+          {
+            text: 'CSS',
+            link: '/blog/css/'
           }
         ]
       }
@@ -48,6 +52,15 @@ module.exports = {
           collapsable: false,
           children: [
             ['typescript1.md', '基本类型']
+          ]
+        }
+      ],
+      '/blog/css/': [
+        {
+          title: 'BEM',
+          collapsable: false,
+          children: [
+            ['bem.md', '初识']
           ]
         }
       ],
